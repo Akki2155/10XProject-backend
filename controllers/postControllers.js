@@ -1,7 +1,7 @@
 const postSchema=require("../models/postModel");
 
 exports.getAllPosts=(async(req,res)=>{
-    res.status(200).json(await postSchema.find());
+    res.status(200).json(await postSchema.find().sort({"date":-1}));
 })
 
 exports.createPost=(async(req,res)=>{
