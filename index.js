@@ -10,6 +10,9 @@ app.use(express.json());
 
 const postRoutes=require("./routes/post.js")
 
+app.use("/", (req,res)=>{
+    res.send("Hosted Ok!")
+})
 app.use("/posts", postRoutes)
 
 
