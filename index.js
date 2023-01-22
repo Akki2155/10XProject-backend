@@ -9,7 +9,7 @@ app.use(cors());
 
 
 
-const postRoutes=require("../backend/routes/post")
+const postRoutes=require("./routes/post.js")
 
 app.use("/posts", postRoutes)
 
