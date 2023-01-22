@@ -4,9 +4,8 @@ const port= 8080 || process.env.PORT ;
 const mongoose=require('mongoose');
 
 const app=express();
-app.use(express.json());
 app.use(cors());
-
+app.use(express.json());
 
 
 const postRoutes=require("./routes/post.js")
